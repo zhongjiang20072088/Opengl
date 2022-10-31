@@ -65,5 +65,9 @@ add_executable (light2 "light/light2.cpp" "glad/glad.c")
 target_link_libraries(light2 PRIVATE glfw)
 target_include_directories(light2 PRIVATE include)
 
+add_executable (material "material/main.cpp" "glad/glad.c")
+target_link_libraries(material PRIVATE glfw)
+target_include_directories(material PRIVATE include)
+
 
 # TODO: 如有需要，请添加测试并安装目标。
