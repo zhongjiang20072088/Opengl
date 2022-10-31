@@ -57,5 +57,13 @@ add_executable (camera "camera/main.cpp" "glad/glad.c")
 target_link_libraries(camera PRIVATE glfw)
 target_include_directories(camera PRIVATE include)
 
+add_executable (light1 "light/light1.cpp" "glad/glad.c")
+target_link_libraries(light1 PRIVATE glfw)
+target_include_directories(light1 PRIVATE include)
+
+add_executable (light2 "light/light2.cpp" "glad/glad.c")
+target_link_libraries(light2 PRIVATE glfw)
+target_include_directories(light2 PRIVATE include)
+
 
 # TODO: 如有需要，请添加测试并安装目标。
