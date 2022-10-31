@@ -69,5 +69,9 @@ add_executable (material "material/main.cpp" "glad/glad.c")
 target_link_libraries(material PRIVATE glfw)
 target_include_directories(material PRIVATE include)
 
+add_executable (lightmap "lightmap/main.cpp" "glad/glad.c")
+target_link_libraries(lightmap PRIVATE glfw)
+target_include_directories(lightmap PRIVATE include)
+
 
 # TODO: 如有需要，请添加测试并安装目标。
