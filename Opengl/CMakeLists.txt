@@ -73,5 +73,17 @@ add_executable (lightmap "lightmap/main.cpp" "glad/glad.c")
 target_link_libraries(lightmap PRIVATE glfw)
 target_include_directories(lightmap PRIVATE include)
 
+add_executable (directional_light "lightcaster/directional_light.cpp" "glad/glad.c")
+target_link_libraries(directional_light PRIVATE glfw)
+target_include_directories(directional_light PRIVATE include)
+
+add_executable (point_light "lightcaster/point_light.cpp" "glad/glad.c")
+target_link_libraries(point_light PRIVATE glfw)
+target_include_directories(point_light PRIVATE include)
+
+add_executable (spot_light "lightcaster/spot_light.cpp" "glad/glad.c")
+target_link_libraries(spot_light PRIVATE glfw)
+target_include_directories(spot_light PRIVATE include)
+
 
 # TODO: 如有需要，请添加测试并安装目标。
