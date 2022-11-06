@@ -85,5 +85,9 @@ add_executable (spot_light "lightcaster/spot_light.cpp" "glad/glad.c")
 target_link_libraries(spot_light PRIVATE glfw)
 target_include_directories(spot_light PRIVATE include)
 
+add_executable (multiplelights "multiplelights/main.cpp" "glad/glad.c")
+target_link_libraries(multiplelights PRIVATE glfw)
+target_include_directories(multiplelights PRIVATE include)
+
 
 # TODO: 如有需要，请添加测试并安装目标。
