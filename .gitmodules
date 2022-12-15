@@ -1,0 +1,3 @@
+[submodule "Opengl/assimp"]
+	path = Opengl/assimp
+	url = git@github.com:assimp/assimp.git
