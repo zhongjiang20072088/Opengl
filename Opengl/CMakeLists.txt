@@ -6,11 +6,14 @@ cmake_minimum_required (VERSION 3.8)
 # 将源代码添加到此项目的可执行文件。
 
 message("current source directory ${CMAKE_CURRENT_SOURCE_DIR}")
-
 message("current binary directory ${CMAKE_CURRENT_BINARY_DIR}")
 
 
 add_subdirectory(glfw)
+
+add_subdirectory(assimp)
+
+#include_directories(assimp/include) 
 
 add_executable (Opengl "Opengl.cpp" "Opengl.h")
 
@@ -46,7 +49,7 @@ target_link_libraries(texture PRIVATE glfw)
 target_include_directories(texture PRIVATE include)
 
 add_executable (transform "transform/main.cpp" "glad/glad.c")
-target_link_libraries(transform PRIVATE glfw)
+target_link_libraries(transform PRIVATE glfw assimp)
 target_include_directories(transform PRIVATE include)
 
 add_executable (color "color/main.cpp" "glad/glad.c")
